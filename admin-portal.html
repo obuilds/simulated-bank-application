@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="app.js" defer></script>
+    <script src="test.js" defer></script>
+</head>
+<body>
+    <div class="alert alert-dismissible fade show display" role="alert" id="alert-container">
+    
+    </div>
+    <section id="admin-login" class="userForm ">
+    
+        <section class="container-class">
+            <div>
+                <h3 class="logo-heading"><i class="fa-solid fa-building-columns"></i> <span class="bank-name">One</span>Bank
+                </h3>
+                <p class="logo-text">Secure Banking. Better Tomorrow</p>
+            </div>
+            <div class="info">
+                <h2 class="info-heading">Admin Login</h2>
+                <p class="info-text">Enter your admin credentials to continue</p>
+            </div>
+            <div class="input-container">
+                <form action="" class="signup-container">
+                    <label for="adminname" class="input-heading">Username</label>
+                    <input type="text" name="adminname" id="admin-username" placeholder="Enter only your admin user name">
+                    <label for="userage" class="input-heading">Password</label>
+                    <input type="password" name="adminpassword" id="admin-password" placeholder="Enter your password">
+                    <button type="submit" class="form-btn" id="adminloginBtn">Login</button>
+                </form>
+                <div class="divider">
+                    <span>Authorised Personnel Only</span>
+                </div>
+            </div>
+        </section>
+    
+    </section>
+
+    <section id="admin-dashboard" class="admin-display display">
+        <header class="admin-header">
+            <div id="header-content" class="header-display">
+                <div class="header-pri">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h3><span>One</span>Bank</h3>
+                </div>
+                <div class="sec">
+                    <div id="header-sec" class="hsec-display">
+                        <div class="rounded-pill">
+                            <h4>AD</h4>
+                        </div>
+                        <div id="details" class="header-details">
+                            <h4 class="acct-header">Admin</h4>
+                            <p class="acct">Administrator</p>
+                        </div>
+                    </div>
+                    <button class="header-btn dropdown-item" id="admin-logut">Logout</button>
+                </div>
+            </div>
+        </header>
+        <div class="admin-text">
+            <h1>Admin Dashboard</h1>
+            <p>Monitor and manage the bank's operations</p>
+        </div>
+        <div class="display-cards">
+            <div class="total-balance display-card" id="bankBalance">
+                <h4>Total Bank Balance</h4>
+            </div>
+            <div class="display-card money-in" id="moneyIn">
+                <h4>Money In(Deposits)</h4>
+            </div>
+            <div class="display-card money-out" id="moneyOut">
+                <h4>Money Out(Withdrawals)</h4>
+            </div>
+            <div class="display-card total-user" id="totalUsers">
+                <h4>Total Users</h4>
+            </div>
+        </div>
+        <div class="users-info">
+            <div class="user-accounts">
+                <div>
+                    <h2>User Accounts</h2>
+                    <p>Manage Customer account and their status</p>
+                </div>
+                <input type="search" name="" id="userSearch" placeholder="Search by account number or customer name">
+                <section class="users-container">
+                    <div class="user-headings">
+                        <h4>Account No.</h4>
+                        <h4>Customer name</h4>
+                        <h4>Balance</h4>
+                        <h4>Status</h4>
+                        <!-- <h4>Action</h4> -->
+                    </div>
+                    <div id="allUsers">
+                        <!-- <div class="transac-admin">
+                            <p>100001</p>
+                            <p>John Doe</p>
+                            <p>$50,000</p>
+                            <div class="status disable">
+                                Active
+                            </div>
+                            <button type="submit" id="disableBtn" class="enable">Disable</button>
+                        
+                        </div> -->
+                    </div>
+                </section>
+
+            </div>
+            <div class="user-accounts">
+                <div>
+                    <h2>Recent Transactions</h2>
+                    <p>View and monitor all bank transactions</p>
+                </div>
+                <div>
+                    <input type="search" name="" id="acctonly" placeholder="Search by account number">
+                    <select name="" id="">
+                        <option value="">All Types</option>
+                        <option value="">Deposit</option>
+                        <option value="">Withdrawal</option>
+                        <option value="">Transfer</option>
+                    </select>
+                </div>
+                
+                <section class="users-container">
+                    <div class="user-headings">
+                        <h4>Date & Time</h4>
+                        <h4>Type</h4>
+                        <h4>Sender/Receiver</h4>
+                        <h4>Amount</h4>
+                        <h4>Status</h4>
+                    </div>
+                    <div id="usersTransavtions"></div>
+                </section>
+
+            </div>
+        </div>
+        <div class="bank-summary">
+            <div class="summary-headings">
+                <h4>Bank Operation Summary</h4>
+                <p>Quick overview of the bank's activity </p>
+            </div>
+            <div class="display-cards">
+                <div class="display-card Total-deposit" id="Tdeposit">
+                    <h4>Total Deposits</h4>
+                    <h2 id="totalDeposit">$1,300,000</h2>
+                    <p>All successful deposits</p>
+                </div>
+            <div class="display-cards">
+                <div class="display-card Total-withdrawal">
+                    <h4>Total Withdrawals</h4>
+                    <h2 id="totalWithdraw">$1,300,000</h2>
+                    <p>All successful withdrawals</p>
+                </div>
+                <div class="display-card Total-transfer">
+                    <h4>Total Transfers</h4>
+                    <h2 id="totalTransfer">$1,300,000</h2>
+                    <p>All successful transfers</p>
+                </div>
+                <div class="display-card Total-transactions">
+                    <h4>Total Transactions</h4>
+                    <h2 id="totalTransac">2</h2>
+                    <p>Successful Transactions</p>
+                </div>
+                
+
+            </div>
+        </div>
+        </section>    
+</body>
+</html>
+
+<!-- <button type="submit" class="status-btn active">Disable</button> -->

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        overflow: hidden;
+        background: linear-gradient(135deg, black, navy);
+        width: 100%;
+    }
+    .container{
+        background-color: rgba(218, 119, 119, 0.15);
+        backdrop-filter: blur(10px);
+        width: 400px;
+        height: auto;
+        margin: 100px auto;
+        padding: 40px 20px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 5px;
+        box-shadow: 0 0 10px navy;
+        text-align: center;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-heading{
+        font-size: 30px;
+        margin-bottom: 0;
+        color:white;
+    }
+    .logo-text{
+        font-size: 15px;
+        font-weight: 100;
+        color: #666565;
+    }
+    .welcome{
+        margin: 20px;
+    }
+    .welcome-heading{
+        font-weight: bolder;
+        font-size: 25px;
+        color: white;
+        margin-bottom: 0;
+    }
+    .welcome-text{
+         font-size: 15px;
+        font-weight: 100;
+        color: #666565;
+    }
+    .input-heading{
+        text-align: left;
+        font-size: 13px;
+        font-weight: bold;
+        color: #c4c0c0;
+        margin-bottom: 0;
+    }
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+    input{
+        width: 350px;
+        height: 37px;
+        border-radius: 5px;
+        background-color: #f4f4f4;
+        border: 1px rgb(164, 164, 245) groove;
+        outline: none;
+    }
+    .login-btn{
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        border: none;
+        color:white;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 13px;
+        background-color: blue;
+        cursor: pointer;
+    }
+
+    
+
+
+    
+</style>
+<body>
+<section class="container">
+    <div >
+        <h3 class="logo-heading"><i class="fa-solid fa-building-columns"></i> MyBank</h3>
+        <p class="logo-text">Secure Banking. Better Tomorrow</p>
+    </div>
+    <div class="welcome">
+        <h2 class="welcome-heading">Welcome Back</h2>
+        <p class="welcome-text">Log in to access your account</p>
+    </div>
+    <div class="input-container">
+        <p class="input-heading">Account Number</p>
+
+        <form action="" class="form-container" id="login-form">
+            <input type="text" name="" id="form-input" placeholder="Enter your account number">
+            <button type="submit" class="login-btn" id="btn-login">Login</button>
+        </form>
+
+    </div>
+
+</section>
+
+<section>
+    
+</section>
+
+
+</body>
+</html>
