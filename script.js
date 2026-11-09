@@ -1288,7 +1288,7 @@ _bankinfo(){
     }
 }
 switch (global.currentPage) {
-    case '/dashboard.html':
+    case '/index.html':
         const app = new App()  
         break;
 
