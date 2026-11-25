@@ -1291,6 +1291,9 @@ switch (global.currentPage) {
     case '/':
         const app = new App()  
         break;
+    case '/index.html':
+        const appp = new App()  
+        break;
 
     case '/admin-portal.html':
         const admin = new Admin()
